@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Airline {
 
-    @CsvBindByName
+    @CsvBindByName(column="CODE", required = true)
     public String code;
     @CsvBindByName
     public String name;
