@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Route {
-    public String airline_code;
-    public String source_code;
-    public String destination_code;
-    public String distance;
-    public String time;
+    String airline_code;
+    String source_code;
+    String destination_code;
+    float distance;
+    float time;
 
     public String getAirline_code() {
         return airline_code;
@@ -34,19 +34,19 @@ public class Route {
         this.destination_code = destination_code;
     }
 
-    public String getDistance() {
+    public float getDistance() {
         return distance;
     }
 
-    public void setDistance(String distance) {
+    public void setDistance(float distance) {
         this.distance = distance;
     }
 
-    public String getTime() {
+    public float getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(float time) {
         this.time = time;
     }
     

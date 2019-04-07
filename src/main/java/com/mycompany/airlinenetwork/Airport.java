@@ -5,12 +5,13 @@ import java.util.Map;
 
 public class Airport {
     
-    public String code;
-    public String name;
-    public String city;
-    public String country;
-    public String latitude;
-    public String longitude;
+    String code;
+    String name;
+    String city;
+    String country;
+    String latitude;
+    String longitude;
+    Connection connection;
 
     public String getCode() {
         return code;
@@ -59,6 +60,15 @@ public class Airport {
     public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
+
+    public Connection getConnection() {
+        return connection;
+    }
+
+    public void setConnection(Connection connection) {
+        this.connection = connection;
+    }
+    
     
     public static String[] getMapping(){
         return new String[] { "code", "name", "city", "country", "latitude", "longitude" };

@@ -23,7 +23,7 @@ public class Main {
         boolean isRunning = loadData();
         
         //Build graph
-        //buildGraph(airports);
+        buildGraph();
         
         Scanner reader = new Scanner(System.in);
         String inputStr;
@@ -85,18 +85,19 @@ public class Main {
         airports = new HashMap<String, Airport>();
         
         try{
-            airlines = Helpers.generateArrayFromCSV(Airline.class, "C:\\Users\\Kast\\Documents\\School\\CBS\\ALGORITHMS\\Reviews\\Airport_Network\\airlines.txt", Airline.getMapping());
-            listOfAirports = Helpers.generateArrayFromCSV(Airport.class, "C:\\Users\\Kast\\Documents\\School\\CBS\\ALGORITHMS\\Reviews\\Airport_Network\\airports.txt", Airport.getMapping());
-            routes = Helpers.generateArrayFromCSV(Route.class, "C:\\Users\\Kast\\Documents\\School\\CBS\\ALGORITHMS\\Reviews\\Airport_Network\\routes.txt", Route.getMapping());
+            airlines = Helpers.generateArrayFromCSV(Airline.class, "/Users/elitsa/Downloads/airlines.txt", Airline.getMapping());
+            listOfAirports = Helpers.generateArrayFromCSV(Airport.class, "/Users/elitsa/Downloads/airports.txt", Airport.getMapping());
+            routes = Helpers.generateArrayFromCSV(Route.class, "/Users/elitsa/Downloads/routes.txt", Route.getMapping());
             isSuccessful = true;
             
             for(Airport airport : listOfAirports){
                 airports.put(airport.getCode(), airport);
             }
-            
+            /* RM
             System.out.println(airlines.size());
             System.out.println(airports.size());
             System.out.println(routes.size());
+            */
 
         }
         catch(Exception e){
@@ -104,6 +105,28 @@ public class Main {
         }
         
         return isSuccessful;
+    }
+
+    private void buildGraph() {
+        for(Airport airport : airports.values()){
+            Connection pointer = airport.getConnection();
+            
+            for(Route route : routes){
+                if(route.getSource_code().equals(airport.getCode())){
+                    Connection newConn = new Connection(airports.get(route.getDestination_code()), route.getAirline_code(), route.getDistance(), route.getTime());
+
+                    if(pointer == null){
+                        airport.setConnection(newConn);
+                        pointer = airport.getConnection();
+                    }
+                    else{
+                        pointer.setNext(newConn);
+                        pointer = newConn;
+                    }
+                }
+            }
+        }
+        
     }
     
 }

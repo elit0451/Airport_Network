@@ -6,9 +6,9 @@ import java.util.Map;
 
 public class Airline {
     
-    public String code;
-    public String name;
-    public String country;
+    String code;
+    String name;
+    String country;
 
     public String getCode() {
         return code;
