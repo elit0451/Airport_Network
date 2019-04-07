@@ -5,12 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Airline {
-
-    @CsvBindByName(column="CODE", required = true)
+    
     public String code;
-    @CsvBindByName
     public String name;
-    @CsvBindByName
     public String country;
 
     public String getCode() {
@@ -37,14 +34,8 @@ public class Airline {
         this.country = country;
     }
 
-    public static Map<String, String> getMapping(){
-        Map<String, String> mapping = new 
-                      HashMap<String, String>(); 
-        mapping.put("CODE", "code"); 
-        mapping.put("NAME", "name"); 
-        mapping.put("COUNTRY", "country");
-        
-        return mapping;
+    public static String[] getMapping(){
+        return new String[] { "code", "name", "country" };
     }
     
     @Override

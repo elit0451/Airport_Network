@@ -7,8 +7,8 @@ public class Route {
     public String airline_code;
     public String source_code;
     public String destination_code;
-    public float distance;
-    public float time;
+    public String distance;
+    public String time;
 
     public String getAirline_code() {
         return airline_code;
@@ -34,31 +34,23 @@ public class Route {
         this.destination_code = destination_code;
     }
 
-    public float getDistance() {
+    public String getDistance() {
         return distance;
     }
 
-    public void setDistance(float distance) {
+    public void setDistance(String distance) {
         this.distance = distance;
     }
 
-    public float getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(float time) {
+    public void setTime(String time) {
         this.time = time;
     }
     
-    public static Map<String, String> getMapping(){
-        Map<String, String> mapping = new 
-                      HashMap<String, String>(); 
-        mapping.put("AIRLINE_CODE", "airline_code"); 
-        mapping.put("SOURCE_CODE", "source_code"); 
-        mapping.put("DESTINATION_CODE", "destination_code"); 
-        mapping.put("DISTANCE", "distance");
-        mapping.put("TIME", "time"); 
-        
-        return mapping;
+    public static String[] getMapping(){
+        return new String[] { "airline_code", "source_code", "destination_code", "distance", "time" };
     }
 }

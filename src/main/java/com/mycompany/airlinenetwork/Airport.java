@@ -60,16 +60,7 @@ public class Airport {
         this.longitude = longitude;
     }
     
-    public static Map<String, String> getMapping(){
-        Map<String, String> mapping = new 
-                      HashMap<String, String>(); 
-        mapping.put("CODE", "code"); 
-        mapping.put("NAME", "name"); 
-        mapping.put("CITY", "city"); 
-        mapping.put("COUNTRY", "country");
-        mapping.put("LATITUDE", "latitude"); 
-        mapping.put("LONGITUDE", "longitude");
-        
-        return mapping;
+    public static String[] getMapping(){
+        return new String[] { "code", "name", "city", "country", "latitude", "longitude" };
     }
 }

@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
     
     List<Airline> airlines;
-    HashMap<String, Airline> airports;
+    HashMap<String, Airport> airports;
     List<Route> routes;
     
     
@@ -82,17 +82,16 @@ public class Main {
     private boolean loadData(){
         boolean isSuccessful = false;
         List<Airport> listOfAirports; 
-        airports = new HashMap<String, Airline>();
+        airports = new HashMap<String, Airport>();
         
         try{
-            airlines = Helpers.generateArrayFromCSV(Airline.class, "/Users/elitsa/Downloads/airlines.txt", Airline.getMapping());
-            listOfAirports = Helpers.generateArrayFromCSV(Airport.class, "/Users/elitsa/Downloads/airports.txt", Airport.getMapping());
-            routes = Helpers.generateArrayFromCSV(Route.class, "/Users/elitsa/Downloads/routes.txt", Route.getMapping());
+            airlines = Helpers.generateArrayFromCSV(Airline.class, "C:\\Users\\Kast\\Documents\\School\\CBS\\ALGORITHMS\\Reviews\\Airport_Network\\airlines.txt", Airline.getMapping());
+            listOfAirports = Helpers.generateArrayFromCSV(Airport.class, "C:\\Users\\Kast\\Documents\\School\\CBS\\ALGORITHMS\\Reviews\\Airport_Network\\airports.txt", Airport.getMapping());
+            routes = Helpers.generateArrayFromCSV(Route.class, "C:\\Users\\Kast\\Documents\\School\\CBS\\ALGORITHMS\\Reviews\\Airport_Network\\routes.txt", Route.getMapping());
             isSuccessful = true;
             
-            for(Airline airport : airlines){
-                
-                System.out.println(airport);
+            for(Airport airport : listOfAirports){
+                airports.put(airport.getCode(), airport);
             }
             
             System.out.println(airlines.size());
@@ -100,8 +99,8 @@ public class Main {
             System.out.println(routes.size());
 
         }
-        catch(IOException e){
-            System.out.println("Something went wrong while loading the files");
+        catch(Exception e){
+            System.out.println("Something went wrong while loading the files - " + e.getMessage());
         }
         
         return isSuccessful;
