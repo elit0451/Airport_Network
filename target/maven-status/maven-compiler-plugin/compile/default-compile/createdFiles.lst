@@ -5,3 +5,4 @@ com/mycompany/airlinenetwork/Connection.class
 com/mycompany/airlinenetwork/Route.class
 com/mycompany/airlinenetwork/Helpers.class
 com/mycompany/airlinenetwork/Main.class
+com/mycompany/airlinenetwork/DistanceTo.class

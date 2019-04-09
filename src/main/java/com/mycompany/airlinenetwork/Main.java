@@ -41,11 +41,11 @@ public class Main {
             
             switch (inputNr)
             {
-                case 1: //airlineJourneySearch();
+                case 1: airlineJourneySearch(reader);
                     break;
-                case 2: //shortestDistance();
+                case 2: shortestDistance(reader);
                     break;
-                case 3: //shortestTime();
+                case 3: shortestTime(reader);
                     break;
                 case 4: //widestAirlineCoverage();
                     break;
@@ -127,6 +127,28 @@ public class Main {
             }
         }
         
+    }
+
+    private void airlineJourneySearch(Scanner reader) {
+        String source = reader.nextLine();
+        String destination = reader.nextLine();
+        
+        Algorithms.DFS(airports, airlines, source, destination);
+        Algorithms.BFS(airports, airlines, source, destination);
+    }
+
+    private void shortestDistance(Scanner reader) {
+        String source = reader.nextLine();
+        String destination = reader.nextLine();
+        
+        Algorithms.distDijkstraAlg(airports, source, destination);
+    }
+
+    private void shortestTime(Scanner reader) {
+        String source = reader.nextLine();
+        String destination = reader.nextLine();
+        
+        Algorithms.timeDijkstraAlg(airports, source, destination);
     }
     
 }
