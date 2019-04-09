@@ -490,7 +490,7 @@ BGO;Bergen Airport Flesland;Bergen;Norway;60.29339981;5.218140125
 BJF;Båtsfjord Airport;Batsfjord;Norway;70.60050201416;29.691400527954
 KRS;Kristiansand Airport;Kristiansand;Norway;58.204200744628906;8.085370063781738
 BDU;Bardufoss Airport;Bardufoss;Norway;69.055801391602;18.540399551392
-EVE;Harstad/Narvik Airport Evenes;Harstad/Narvik;Norway;68.491302490234;16.678100585938
+EVE;Harstad/Narvik Airport, Evenes;Harstad/Narvik;Norway;68.491302490234;16.678100585938
 VDB;Leirin Airport;Fagernes;Norway;61.015598297119;9.2880601882935
 FRO;Florø Airport;Floro;Norway;61.583599090576;5.0247201919556
 OSL;Oslo Gardermoen Airport;Oslo;Norway;60.193901062012;11.100399971008
@@ -506,12 +506,12 @@ NTB;Notodden Airport;Notodden;Norway;59.565701;9.21222
 OLA;Ørland Airport;Orland;Norway;63.69889831542969;9.604000091552734
 RRS;Røros Airport;Roros;Norway;62.578399658203;11.342300415039
 RYG;Moss-Rygge Airport;Rygge;Norway;59.378817;10.785439
-LYR;Svalbard Airport Longyear;Svalbard;Norway;78.246101379395;15.465600013733
+LYR;Svalbard Airport, Longyear;Svalbard;Norway;78.246101379395;15.465600013733
 SKE;Skien Airport;Skien;Norway;59.185001373291016;9.566940307617188
 SRP;Stord Airport;Stord;Norway;59.791900634765625;5.340849876403809
 SSJ;Sandnessjøen Airport (Stokka);Sandnessjoen;Norway;65.956802368164;12.468899726868
 TOS;Tromsø Airport;Tromso;Norway;69.68329620361328;18.918899536132812
-TRF;Sandefjord Airport Torp;Sandefjord;Norway;59.1866989136;10.258600235
+TRF;Sandefjord Airport, Torp;Sandefjord;Norway;59.1866989136;10.258600235
 TRD;Trondheim Airport Værnes;Trondheim;Norway;63.4578018;10.9239998
 SVG;Stavanger Airport Sola;Stavanger;Norway;58.876701354;5.6377801895
 GDN;Gdańsk Lech Wałęsa Airport;Gdansk;Poland;54.377601623535156;18.46619987487793
@@ -2237,7 +2237,7 @@ PSJ;Kasiguncu Airport;Poso;Indonesia;-1.41674995422;120.657997131
 OTI;Pitu Airport;Morotai Island;Indonesia;2.0459899902300003;128.324996948
 TTE;Sultan Khairun Babullah Airport;Ternate;Indonesia;0.831413984298706;127.38099670410156
 LUW;Bubung Airport;Luwuk;Indonesia;-1.0389200448989868;122.77200317382812
-AMQ;Pattimura Airport Ambon;Ambon;Indonesia;-3.7102599144;128.089004517
+AMQ;Pattimura Airport, Ambon;Ambon;Indonesia;-3.7102599144;128.089004517
 FKQ;Fakfak Airport;Fak Fak;Indonesia;-2.9201900959014893;132.26699829101562
 KNG;Kaimana Airport;Kaimana;Indonesia;-3.6445200443267822;133.6959991455078
 BXB;Babo Airport;Babo;Indonesia;-2.5322399139404297;133.43899536132812
@@ -2780,7 +2780,7 @@ BAD;Barksdale Air Force Base;Shreveport;United States;32.5018005371;-93.66269683
 FOE;Topeka Regional Airport - Forbes Field;Topeka;United States;38.950901031499995;-95.66359710690001
 COT;Cotulla-La Salle County Airport;Cotulla;United States;28.45669937;-99.22029877
 ILM;Wilmington International Airport;Wilmington;United States;34.270599365234375;-77.90260314941406
-BTR;Baton Rouge Metropolitan Ryan Field;Baton Rouge;United States;30.53319931;-91.14959717
+BTR;Baton Rouge Metropolitan, Ryan Field;Baton Rouge;United States;30.53319931;-91.14959717
 TYR;Tyler Pounds Regional Airport;Tyler;United States;32.35409927368164;-95.40239715576172
 BWI;Baltimore/Washington International Thurgood Marshall Airport;Baltimore;United States;39.17539978;-76.66829681
 HBR;Hobart Regional Airport;Hobart;United States;34.991317;-99.051313
@@ -3185,12 +3185,12 @@ LBL;Liberal Mid-America Regional Airport;Liberal;United States;37.0442009;-100.9
 LAA;Lamar Municipal Airport;Lamar;United States;38.069698333699996;-102.68800354
 GLD;Renner Field-Goodland Municipal Airport;Goodland;United States;39.37060165;-101.6989975
 COD;Yellowstone Regional Airport;Cody;United States;44.520198822;-109.024002075
-HOV;Ørsta-Volda Airport Hovden;Orsta-Volda;Norway;62.180000305176;6.0741000175476
+HOV;Ørsta-Volda Airport, Hovden;Orsta-Volda;Norway;62.180000305176;6.0741000175476
 ISC;St. Mary's Airport;ST MARY\\'S;United Kingdom;49.913299560546875;-6.291669845581055
 SGF;Springfield Branson National Airport;Springfield;United States;37.24570084;-93.38860321
 NVK;Narvik Framnes Airport;Narvik;Norway;68.436897277832;17.386699676514
 BVG;Berlevåg Airport;Berlevag;Norway;70.871398925781;29.034200668335
-FBU;Oslo Fornebu Airport;Oslo;Norway;59.89580154418945;10.617199897766113
+FBU;Oslo, Fornebu Airport;Oslo;Norway;59.89580154418945;10.617199897766113
 NSK;Norilsk-Alykel Airport;Norilsk;Russia;69.31109619140625;87.33219909667969
 AAQ;Anapa Vityazevo Airport;Anapa;Russia;45.002101898193;37.347301483154
 JLN;Joplin Regional Airport;Joplin;United States;37.151798248291016;-94.49829864501953
@@ -3374,7 +3374,7 @@ HEI;Heide-Büsum Airport;Büsum;Germany;54.153331756600004;8.90166664124
 HGL;Helgoland-Düne Airport;Helgoland;Germany;54.185279846200004;7.91583299637
 SJY;Seinäjoki Airport;Seinäjoki / Ilmajoki;Finland;62.692100524902344;22.832300186157227
 NQT;Nottingham Airport;Nottingham;United Kingdom;52.91999816894531;-1.0791699886322021
-DSA;Robin Hood Doncaster Sheffield Airport;Doncaster Sheffield;United Kingdom;53.4805378105;-1.01065635681
+DSA;Robin Hood Doncaster Sheffield Airport;Doncaster, Sheffield;United Kingdom;53.4805378105;-1.01065635681
 CAL;Campbeltown Airport;Campbeltown;United Kingdom;55.437198638916016;-5.686389923095703
 EOI;Eday Airport;Eday;United Kingdom;59.19060134887695;-2.7722198963165283
 FIE;Fair Isle Airport;Fair Isle;United Kingdom;59.53580093383789;-1.628059983253479
@@ -3392,14 +3392,14 @@ CFN;Donegal Airport;Dongloe;Ireland;55.0442008972168;-8.340999603271484
 CNL;Sindal Airport;Sindal;Denmark;57.5035018921;10.229399681099999
 LKN;Leknes Airport;Leknes;Norway;68.152496337891;13.609399795532
 OSY;Namsos Høknesøra Airport;Namsos;Norway;64.472198486328;11.57859992981
-MQN;Mo i Rana Airport Røssvoll;Mo i Rana;Norway;66.363899230957;14.301400184631
-RVK;Rørvik Airport Ryum;Rørvik;Norway;64.838302612305;11.14610004425
+MQN;Mo i Rana Airport, Røssvoll;Mo i Rana;Norway;66.363899230957;14.301400184631
+RVK;Rørvik Airport, Ryum;Rørvik;Norway;64.838302612305;11.14610004425
 RET;Røst Airport;Røst;Norway;67.527801513672;12.103300094604
 SDN;Sandane Airport (Anda);Sandane;Norway;61.830001831055;6.1058301925659
 SOG;Sogndal Airport;Sogndal;Norway;61.156101;7.13778
 SVJ;Svolvær Helle Airport;Svolvær;Norway;68.243301391602;14.669199943542
 SOJ;Sørkjosen Airport;Sorkjosen;Norway;69.786796569824;20.959400177002
-VAW;Vardø Airport Svartnes;Vardø;Norway;70.355400085449;31.044900894165
+VAW;Vardø Airport, Svartnes;Vardø;Norway;70.355400085449;31.044900894165
 VRY;Værøy Heliport;Værøy;Norway;67.654555;12.727257
 BZG;Bydgoszcz Ignacy Jan Paderewski Airport;Bydgoszcz;Poland;53.096801757799994;17.9776992798
 LCJ;Łódź Władysław Reymont Airport;Lodz;Poland;51.721900939899996;19.3980998993
@@ -3471,8 +3471,8 @@ VIL;Dakhla Airport;Dakhla;Western Sahara;23.7183;-15.932
 ESU;Mogador Airport;Essadouira;Morocco;31.3974990845;-9.6816701889
 EUN;Hassan I Airport;El Aaiún;Western Sahara;27.151699;-13.2192
 NDR;Nador International Airport;El Aroui;Morocco;34.988800048799995;-3.0282099247
-RAI;Praia International Airport;Praia Santiago Island;Cape Verde;14.924500465393066;-23.493499755859375
-SFL;São Filipe Airport;Sao Filipe Fogo Island;Cape Verde;14.8850002289;-24.4799995422
+RAI;Praia International Airport;Praia, Santiago Island;Cape Verde;14.924500465393066;-23.493499755859375
+SFL;São Filipe Airport;Sao Filipe, Fogo Island;Cape Verde;14.8850002289;-24.4799995422
 BCO;Baco Airport;Baco;Ethiopia;5.78287;36.562
 BEI;Beica Airport;Beica;Ethiopia;9.38638973236084;34.52190017700195
 DSE;Combolcha Airport;Dessie;Ethiopia;11.082500457763672;39.71139907836914
@@ -3650,7 +3650,7 @@ RTA;Rotuma Airport;Rotuma;Fiji;-12.482500076293945;177.0709991455078
 SVU;Savusavu Airport;Savusavu;Fiji;-16.8027992249;179.341003418
 EUA;Kaufana Airport;Eua Island;Tonga;-21.378299713100002;-174.957992554
 HPA;Lifuka Island Airport;Lifuka;Tonga;-19.777000427246094;-174.34100341796875
-NFO;Mata'aho Airport;Angaha Niuafo'ou Island;Tonga;-15.5707998276;-175.632995605
+NFO;Mata'aho Airport;Angaha, Niuafo'ou Island;Tonga;-15.5707998276;-175.632995605
 NTT;Kuini Lavenia Airport;Niuatoputapu;Tonga;-15.977337651900001;-173.791029453
 VBV;Vanua Balavu Airport;Vanua Balavu;Fiji;-17.268999099731445;-178.9759979248047
 IUE;Niue International Airport;Alofi;Niue;-19.079030990600586;-169.92559814453125
