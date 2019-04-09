@@ -18,9 +18,12 @@ public class Algorithms {
             throw new IndexOutOfBoundsException("One or both of the specified airports do(es)n't exist");
         
         for(Airline airline : airlines){
+            StopWatch stopWatch = new StopWatch();
             boolean pathFound = DFSRecursively(airports, airline.getCode(), sourceCode, destinationCode, new HashSet<String>());
             
             if(pathFound){
+                System.out.println(" ------- \n");
+                System.out.println("It took " + stopWatch.elapsedTime() + "ms");
                 System.out.println("Ailine " + airline.getCode() + " connects " + sourceCode + " to " + destinationCode);
                 break;
             }
@@ -62,9 +65,12 @@ public class Algorithms {
             throw new IndexOutOfBoundsException("One or both of the specified airports do(es)n't exist");
         
         for(Airline airline : airlines){
+            StopWatch stopWatch = new StopWatch();
             boolean pathFound = BFSIterative(airports, sourceCode, destinationCode, airline.getCode(), new HashSet<String>());
             
             if(pathFound){
+                System.out.println(" ------- \n");
+                System.out.println("It took " + stopWatch.elapsedTime() + "ms");
                 System.out.println("Ailine " + airline.getCode() + " connects " + sourceCode + " to " + destinationCode);
                 break;
             }
@@ -119,6 +125,7 @@ public class Algorithms {
         Stack<DistanceTo> visitedQueue = new Stack<DistanceTo>(); 
         String currentSource = sourceCode;
         HashSet<String> visitedAirports = new HashSet<String>();
+        StopWatch stopWatch = new StopWatch();
         
         //construct priority queue
         for(String airportCode : airportsGraph.keySet()){
@@ -161,13 +168,15 @@ public class Algorithms {
             currentSource = getSmallestDistanceCode(minDistanceQueue, visitedQueue);
         }
         
+        System.out.println(" ------- \n");
+        System.out.println("It took " + stopWatch.elapsedTime() + "ms");
+        
         //getting the destination node and its source
         DistanceTo destinationNode = visitedQueue.pop();
         String fromNode = destinationNode.getSourceCode();
         ArrayList<String> pathNodes = new ArrayList<String>();
         
         float finalDistance = destinationNode.getWeight();
-        System.out.println(" ------- \n");
         pathNodes.add(destinationNode.getDestinationCode());
         
         //getting the shortest path
@@ -206,6 +215,7 @@ public class Algorithms {
         Stack<DistanceTo> visitedQueue = new Stack<DistanceTo>(); 
         String currentSource = sourceCode;
         HashSet<String> visitedAirports = new HashSet<String>();
+        StopWatch stopWatch = new StopWatch();
         
         //construct priority queue
         for(String airportCode : airportsGraph.keySet()){
@@ -250,6 +260,10 @@ public class Algorithms {
             currentSource = getSmallestDistanceCode(minTimeQueue, visitedQueue);
         }
         
+        
+        System.out.println(" ------- \n");
+        System.out.println("It took " + stopWatch.elapsedTime() + "ms");
+        
         //getting the destination node and its source
         DistanceTo destinationNode = visitedQueue.pop();
         String fromNode = destinationNode.getSourceCode();
@@ -257,7 +271,6 @@ public class Algorithms {
         
         //removing the final time leg
         float finalDistance = destinationNode.getWeight() - 1;
-        System.out.println(" ------- \n");
         
         pathNodes.add(destinationNode.getDestinationCode());
         
